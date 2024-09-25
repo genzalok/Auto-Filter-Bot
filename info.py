@@ -25,9 +25,9 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 USERNAME = environ.get('USERNAME', 'https://telegram.me/genzalok')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002100182116'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002042987041').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://whitetiger:whitetiger27@cluster0.6mz6t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002100182116'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Sh-.jpg')
