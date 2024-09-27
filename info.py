@@ -20,7 +20,7 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '29236719'))
 API_HASH = environ.get('API_HASH', '1ccf1bd0a86af974e3210a55f662c062')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7703313655:AAGoAcS-qaqEuwoDU86UUNnYX5ml9ktLqHU')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6897344346:AAFep3lS8LWXlIGJkp-v17B-z-D2WjJ5HZ8')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6626499601').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/genzalok')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002100182116'))
@@ -33,7 +33,7 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002100182116'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Sh-.jpg')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', "-1002100182116"))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002100182116'))
 URL = environ.get('URL', 'https://t.me/+qPA6SFq04qliNWY9')
 
 # verify system vars
